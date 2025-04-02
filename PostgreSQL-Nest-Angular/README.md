@@ -6,7 +6,7 @@
 ## Backend
 
 1. Поднять PostgreSQL
-2. Поднять сервер: Nest.js + Prisma. 
+2. Поднять сервер: Nest.js + Prisma.
 3. Опробовать подход TDD через Jest
 4. Выставить Graphql-endpoint
 
@@ -17,24 +17,23 @@
 3. Завести автоматический парсинг токенов
 4. Завести дизайн-систему из Figma
 
-
 <div style="background-color: blueviolet; height: 2px;"></div>
 
-## Layouts  
+## Layouts
 
-1. Create a page layout in Figma and set up tokens.  
-2. Configure automated token export.  
+1. Create a page layout in Figma and set up tokens.
+2. Configure automated token export.
 
-## Backend  
+## Backend
 
-1. Set up PostgreSQL.  
-2. Deploy the server: Nest.js + Prisma.  
-3. Try the TDD approach using Jest.  
-4. Expose a GraphQL endpoint.  
+1. Set up PostgreSQL.
+2. Deploy the server: Nest.js + Prisma.
+3. Try the TDD approach using Jest.
+4. Expose a GraphQL endpoint.
 
-## Frontend  
+## Frontend
 
-1. Set up Angular 19.  
-2. Enable automatic typing via GraphQL interfaces.  
-3. Set up automatic token parsing.  
-4. Integrate the design system from Figma.  
+1. Set up Angular 19.
+2. Enable automatic typing via GraphQL interfaces.
+3. Set up automatic token parsing.
+4. Integrate the design system from Figma.
