@@ -8,6 +8,12 @@ import { NgClass } from '@angular/common';
   standalone: true,
 })
 export class CustomButtonComponent {
+  /**
+   * Надпись на кнопке
+   */
   @Input() label: string = 'Default';
+  /**
+   * Цвет кнопки
+   */
   @Input() isPrimary: boolean = false;
 }

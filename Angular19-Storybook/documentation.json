@@ -90,7 +90,7 @@
         },
         {
             "name": "CustomButtonComponent",
-            "id": "component-CustomButtonComponent-5bf5f1c3ed7c07085121594387c037cafaf38497773eba507398b0174791198533b8d8f3ec837a06c76ddeb5b4aaf2ffefa2e848dfe2d8d08f70470ee02deff7",
+            "id": "component-CustomButtonComponent-bae376fafee51d816136d7f36d079c3d44982b7a367d616f0fb5ae29b7d14eba79a9f3eb5dbc851af660895303333f59c4bea8006b54a738b3899c07801cefbe",
             "file": "src/app/components/custom-button/custom-button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -111,7 +111,9 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 12,
+                    "rawdescription": "\n\nЦвет кнопки\n",
+                    "description": "<p>Цвет кнопки</p>\n",
+                    "line": 18,
                     "type": "boolean",
                     "decorators": []
                 },
@@ -120,7 +122,9 @@
                     "defaultValue": "'Default'",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 11,
+                    "rawdescription": "\n\nНадпись на кнопке\n",
+                    "description": "<p>Надпись на кнопке</p>\n",
+                    "line": 14,
                     "type": "string",
                     "decorators": []
                 }
@@ -141,13 +145,61 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { NgClass } from '@angular/common';\r\n@Component({\r\n  selector: 'app-custom-button',\r\n  imports: [NgClass],\r\n  templateUrl: './custom-button.component.html',\r\n  styleUrl: './custom-button.component.css',\r\n  standalone: true,\r\n})\r\nexport class CustomButtonComponent {\r\n  @Input() label: string = 'Default';\r\n  @Input() isPrimary: boolean = false;\r\n}\r\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\nimport { NgClass } from '@angular/common';\r\n@Component({\r\n  selector: 'app-custom-button',\r\n  imports: [NgClass],\r\n  templateUrl: './custom-button.component.html',\r\n  styleUrl: './custom-button.component.css',\r\n  standalone: true,\r\n})\r\nexport class CustomButtonComponent {\r\n  /**\r\n   * Надпись на кнопке\r\n   */\r\n  @Input() label: string = 'Default';\r\n  /**\r\n   * Цвет кнопки\r\n   */\r\n  @Input() isPrimary: boolean = false;\r\n}\r\n",
             "styleUrl": "./custom-button.component.css",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<button [ngClass]=\"{ primary: isPrimary }\">\r\n  {{ label }}\r\n</button>\r\nЖопа\r\n"
+            "templateData": "<button [ngClass]=\"{ primary: isPrimary }\">\r\n  {{ label }}\r\n</button>\r\n"
+        },
+        {
+            "name": "CustomLabelComponent",
+            "id": "component-CustomLabelComponent-56381028257109812990092a46debf3236bc758716966d0e91e51f53d593d4dc9c22347330dfebccd0031eb366378c2b51748c6e8485e8e84125358844294f34",
+            "file": "src/app/components/custom-label/custom-label.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-custom-label",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./custom-label.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "label",
+                    "defaultValue": "'Default'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-custom-label',\r\n  imports: [],\r\n  templateUrl: './custom-label.component.html',\r\n  styleUrl: './custom-label.component.css',\r\n  standalone: true,\r\n})\r\nexport class CustomLabelComponent {\r\n  @Input() label: string = 'Default';\r\n}\r\n",
+            "styleUrl": "./custom-label.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p>{{ label }}</p>\r\n"
         },
         {
             "name": "HeaderComponent",
@@ -363,7 +415,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 0,
+        "count": 9,
         "status": "low",
         "files": [
             {
@@ -390,8 +442,17 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "CustomButtonComponent",
+                "coveragePercent": 66,
+                "coverageCount": "2/3",
+                "status": "good"
+            },
+            {
+                "filePath": "src/app/components/custom-label/custom-label.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CustomLabelComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
