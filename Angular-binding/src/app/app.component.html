@@ -1,0 +1,26 @@
+<!-- Односторонняя привязка к переменной -->
+<input type="text" name="" id="" value="{{ title }}" />
+<input
+  type="text"
+  name=""
+  id=""
+  value="{{ title }}"
+  (change)="changeInput($event)"
+/>
+<!-- Односторонняя привязка к атрибуту -->
+<input type="text" name="" id="" [value]="title" />
+<!-- Двусторонняя привязка к значению -->
+<input type="text" name="" id="" [(ngModel)]="title" />
+<button (click)="updateInitialValue()">Update value</button>
+
+<!-- Работа с формами стандартными методами -->
+<form action="" (change)="changeForm($event)">
+  <input type="text" name="login" id="" />
+  <input type="text" name="pasword" id="" />
+</form>
+
+<!-- Работа через Reasctive form -->
+<form [formGroup]="formGrouo">
+  <input type="text" formControlName="login" />
+  <input type="text" formControlName="password" />
+</form>
