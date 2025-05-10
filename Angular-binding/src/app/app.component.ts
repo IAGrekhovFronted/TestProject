@@ -3,15 +3,25 @@ import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { FormGroup, FormControl } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule, ReactiveFormsModule],
+  imports: [
+    RouterOutlet,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSlideToggleModule,
+    FormsModule,
+    MatSlideToggleModule,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrl: './app.component.scss',
   standalone: true,
 })
 export class AppComponent {
+  checked = false;
+  disabled = false;
   title: string = 'Initial value';
 
   updateInitialValue() {

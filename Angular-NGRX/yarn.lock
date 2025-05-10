@@ -1747,6 +1747,13 @@
   resolved "https://registry.yarnpkg.com/@ngrx/schematics/-/schematics-19.1.0.tgz#37199af3d6fdcdf67fa720a1c57dddd6429c0a47"
   integrity sha512-n4t0BkVOXL9RMu6i6ef14+021v6nnIrMTLH/kK0HLtW12r8lti+n3qmo+A7K3mWQmS+9eTcZcjEAF3YvfvT64g==
 
+"@ngrx/signals@^19.1.0":
+  version "19.1.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/signals/-/signals-19.1.0.tgz#1ff62c5c019f08e1a37692e077f46832570871ba"
+  integrity sha512-v8sbb+Iox9kdIaKbFgt4Z1W+NxzIU4+g+6qQU6/c27UmtQXv0s1zUKKofPRK0qwkaZzNWkxNToxyoE285ukqcQ==
+  dependencies:
+    tslib "^2.3.0"
+
 "@ngrx/store-devtools@^19.1.0":
   version "19.1.0"
   resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-19.1.0.tgz#a852538a2321cd4217e2a135ff2c665c753e4e88"

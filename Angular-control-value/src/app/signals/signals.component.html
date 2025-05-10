@@ -1,0 +1,16 @@
+<h2>Emit (change)</h2>
+<input type="text" (change)="infocusChangeInput($event)" /> <br />
+<h2>Emit (input)</h2>
+<input type="text" (input)="reactivChangeInput($event)" /> <br />
+<h2>Emit (ngModelChange)</h2>
+<input [ngModel]="ngValue" (ngModelChange)="onModelChange($event)" />
+<h2>Reactive form</h2>
+<form [formGroup]="form">
+  <input formControlName="username" />
+  <input formControlName="password" />
+</form>
+<h2>Signals</h2>
+<input
+  [value]="valueInput()"
+  (input)="valueInput.set($any($event.target).value)"
+/>

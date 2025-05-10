@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-binding',
   imports: [],
   templateUrl: './binding.component.html',
-  styleUrl: './binding.component.css'
+  styleUrl: './binding.component.css',
+  standalone: true,
 })
-export class BindingComponent {
-
-}
+export class BindingComponent {}
